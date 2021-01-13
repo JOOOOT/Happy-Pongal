@@ -1,0 +1,178 @@
+.loader-wrapper {
+    z-index: 5000;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+div.hidden {
+    display: none;
+}
+
+.floatMove {
+    -webkit-animation: wave 5.77778s 0.3s infinite linear;
+    -moz-animation: wave 5.77778s 0.3s infinite linear;
+    animation: wave 5.77778s 0.3s infinite linear;
+}
+
+.Wheel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 30%;
+    width: 100%;
+}
+
+.teddy {
+    height: 33%;
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+.name {
+    width: 100%;
+    height: 9%;
+    margin-top: 25px;
+}
+
+#name_big {
+    display: none;
+}
+
+#name_small {
+    display: block;
+}
+
+.bbname {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+@media (min-width: 768px) {
+    .bbname {
+        font-family: 'Luckiest Guy', cursive;
+        color: white;
+        font-size: 80px;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+    }
+    #name_big {
+        display: block;
+    }
+    #name_small {
+        display: none;
+    }
+    .Wheel {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 35%;
+        width: 35%;
+        margin-bottom: 300px;
+    }
+    .teddy {
+        height: 45%;
+        width: 45%;
+        margin-bottom: 100px;
+    }
+    .name {
+        width: 100%;
+        height: 10%;
+        margin-bottom: 200px;
+    }
+}
+
+.loadWheel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    -moz-animation: loading-text-opacity 3s linear 0s infinite normal;
+    -o-animation: loading-text-opacity 3s linear 0s infinite normal;
+    -webkit-animation: loading-text-opacity 3s linear 0s infinite normal;
+    animation: loading-text-opacity 3s linear 0s infinite normal;
+}
+
+.blink {
+    -moz-animation: loading-text-opacity 3s linear 0s infinite normal;
+    -o-animation: loading-text-opacity 3s linear 0s infinite normal;
+    -webkit-animation: loading-text-opacity 3s linear 0s infinite normal;
+    animation: loading-text-opacity 3s linear 0s infinite normal;
+    opacity: 0;
+}
+
+@keyframes loading-text-opacity {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes loading-text-opacity {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes loading-text-opacity {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes loading-text-opacity {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}

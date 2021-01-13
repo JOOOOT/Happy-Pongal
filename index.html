@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy Birthday!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Happy Birthday! 
+    Make A Wish!">
+    <meta name="author" content="Happy Birthday!">
+    <meta name="content-language" content="en">
+    <meta name='locale' content='en' />
+    <meta name="twitter:widgets:csp" content="on">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="png" />
+    <meta property=og:title content="Happy Birthday!" />
+    <meta property="og:description" content="Happy Birthday! 
+    Make A Wish!">
+    <meta property="og:url" content="https://joooot.github.io/HBD/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/JOOOOT/HBD/main/favicon/HBD.png" />
+    <meta property="fb:app_id" content="944824752668078" />
+    <meta property="fb:admins" content="joot.rocket" />
+    <link rel="icon" href="favicon/hbd.svg" />
+    <link rel="apple-touch-icon" href="favicon/hbd.svg" />
+    <link rel="canonical" href="https://joooot.github.io/HBD/" />
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/styles/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css" />
+</head>
+
+
+<body draggable="false" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
+    <div id="loader" class="container-fluid bg loader-wrapper ">
+
+        <div class="loadWheel img-fluid">
+            <img src="assets/images/loading.svg" style="width: 100%; height: 100%;" alt="loading">
+        </div>
+
+    </div>
+
+    <div id="container" class="wrapper hidden">
+        <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+            <li class="layer" data-depth="0.00"></li>
+            <li class="layer" data-depth="0.10">
+                <div class="background"></div>
+            </li>
+            <li class="layer" data-depth="0.10">
+                <div class="colorLight orange b phase-4"></div>
+            </li>
+            <li class="layer" data-depth="0.10">
+                <div class="colorLight purple c phase-5"></div>
+            </li>
+            <li class="layer" data-depth="0.10">
+                <div class="colorLight orange d phase-3"></div>
+                <div class="Wheel">
+                    <img src="assets/images/bg.png" alt="bh">
+                    <!-- <div id="name_small" class="fixed-bottom name bbname">NAME</div> -->
+                </div>
+            </li>
+            <li class="layer" data-depth="0.15">
+                <ul class="rope depth-10">
+                    <li><img src="assets/images/rope.png" alt="Rope"></li>
+
+                </ul>
+            </li>
+
+
+            <li class="layer" data-depth="0.30">
+                <ul class="rope depth-30">
+                    <li><img src="assets/images/rope.png" alt="Rope"></li>
+
+                </ul>
+            </li>
+
+            <li class="layer" data-depth="0.30">
+                <div class="wave paint depth-30"></div>
+
+            </li>
+            <li class="layer" data-depth="0.40">
+                <div class="wave plain depth-40"></div>
+
+            </li>
+
+            <li class="layer" data-depth="0.50">
+                <div class="wave paint depth-50"></div>
+
+            </li>
+            <li class="layer" data-depth="0.60">
+                <div class="lighthouse depth-60"></div>
+                <img class="fixed-bottom swing-5 teddy" src="assets/images/pongal.svg" alt="teddy">
+                <!-- <div id="name_big" class="fixed-bottom name bbname">NAME</div> -->
+            </li>
+
+            <li class="layer" data-depth="0.60">
+                <ul class="rope depth-60">
+                    <li><img src="assets/images/rope.png" alt="Rope"></li>
+                </ul>
+            </li>
+            <li class="layer" data-depth="0.60">
+                <div class="wave plain depth-60"></div>
+            </li>
+            <li class="layer" data-depth="0.80">
+                <div class="wave plain depth-80"></div>
+            </li>
+            <li class="layer" data-depth="1.00">
+                <div class="wave paint depth-100"></div>
+            </li>
+
+        </ul>
+
+        <section id="about" class="wrapper about hide accelerate">
+            <div class="cell accelerate">
+                <div class="cables center accelerate">
+                    <div class="panel accelerate">
+
+                        <img src="assets/images/wish.png" alt="wish" style="border-radius: 30px;">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button id="toggle" class="toggle i">
+			<div class="cross">
+				<div class="x"></div>
+				<div class="y"></div>
+			</div>
+		</button>
+
+        <div id="prompt" class="wrapper prompt hide accelerate">
+            <div class="cell accelerate">
+                <div class="panel center unselectable accelerate">
+                    <button id="dismiss" class="dismiss">
+						<div class="cross">
+							<div class="x"></div>
+							<div class="y"></div>
+						</div>
+					</button>
+                    <div class="tilt-scene">
+                        <img class="tilt" src="assets/images/tilt.png">
+                    </div>
+                    <h2>Tilting is fun!</h2>
+                    <p>For the best experience, check out this site on a mobile or tablet equipped with a gyroscope</p>
+                    <p>(iPads are the coolest)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/js/libraries.min.js"></script>
+    <script src="deploy/jquery.parallax.js"></script>
+    <script>
+        // $(document).ready(function() {
+        //     $('#container').css('display', 'block');
+        // });
+        $(window).on("load", function() {
+
+            $(document).ready(function() {
+                $("#loader").css('display', 'none');
+                $("#container").removeClass("hidden");
+            });
+
+        });
+
+
+        // jQuery Selections
+        var $html = $('html'),
+            $container = $('#container'),
+            $prompt = $('#prompt'),
+            $toggle = $('#toggle'),
+            $about = $('#about'),
+            $scene = $('#scene');
+
+        // Hide browser menu.
+        (function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 0);
+        })();
+
+        // Setup FastClick.
+        FastClick.attach(document.body);
+
+        // Add touch functionality.
+        if (Hammer.HAS_TOUCHEVENTS) {
+            $container.hammer({
+                drag_lock_to_axis: true
+            });
+            _.tap($html, 'a,button,[data-tap]');
+        }
+
+        // Add touch or mouse class to html element.
+        $html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+        // Resize handler.
+        (resize = function() {
+            $scene[0].style.width = window.innerWidth + 'px';
+            $scene[0].style.height = window.innerHeight + 'px';
+            if (!$prompt.hasClass('hide')) {
+                if (window.innerWidth < 600) {
+                    $toggle.addClass('hide');
+                } else {
+                    $toggle.removeClass('hide');
+                }
+            }
+        })();
+
+        // Attach window listeners.
+        window.onresize = _.debounce(resize, 200);
+        window.onscroll = _.debounce(resize, 200);
+
+        function showDetails() {
+            $about.removeClass('hide');
+            $toggle.removeClass('i');
+
+        }
+
+        function hideDetails() {
+            $about.addClass('hide');
+            $toggle.addClass('i');
+
+        }
+
+        // Listen for toggle click event.
+        $toggle.on('click', function(event) {
+            $toggle.hasClass('i') ? showDetails() : hideDetails();
+        });
+
+        // Pretty simple huh?
+        $scene.parallax();
+
+        // Check for orientation support.
+        setTimeout(function() {
+            if ($scene.data('mode') === 'cursor') {
+                $prompt.removeClass('hide');
+                if (window.innerWidth < 600) $toggle.addClass('hide');
+                $prompt.on('click', function(event) {
+                    $prompt.addClass('hide');
+                    if (window.innerWidth < 600) {
+                        setTimeout(function() {
+                            $toggle.removeClass('hide');
+                        }, 1200);
+                    }
+                });
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
