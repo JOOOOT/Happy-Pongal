@@ -7,10 +7,6 @@
     text-align: center;
 }
 
-div.hidden {
-    display: none;
-}
-
 .floatMove {
     -webkit-animation: wave 5.77778s 0.3s infinite linear;
     -moz-animation: wave 5.77778s 0.3s infinite linear;
