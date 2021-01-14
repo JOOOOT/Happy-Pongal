@@ -42,7 +42,9 @@
         </div>
 
     </div>
-
+    <audio id="bgm" loop>
+        <source src="Pongal.mpeg" type="audio/mpeg">
+      </audio>
     <div id="container" class="wrapper hidden">
         <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
             <li class="layer" data-depth="0.00"></li>
@@ -155,6 +157,7 @@
     <script src="assets/scripts/js/libraries.min.js"></script>
     <script src="deploy/jquery.parallax.js"></script>
     <script>
+        var bgm = document.getElementById("bgm");
         // $(document).ready(function() {
         //     $('#container').css('display', 'block');
         // });
@@ -217,13 +220,14 @@
         function showDetails() {
             $about.removeClass('hide');
             $toggle.removeClass('i');
-
+            bgm.play();
         }
 
         function hideDetails() {
             $about.addClass('hide');
             $toggle.addClass('i');
-
+            bgm.pause();
+            bgm.currentTime = 0;
         }
 
         // Listen for toggle click event.
