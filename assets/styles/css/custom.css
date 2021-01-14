@@ -29,8 +29,8 @@ div.hidden {
 }
 
 .teddy {
-    height: 28%;
-    width: 28%;
+    height: 33%;
+    width: 33%;
     margin-bottom: 30px;
 }
 
@@ -101,7 +101,7 @@ div.hidden {
     right: 0;
     margin: auto;
     text-align: center;
-    width: 100%;
+    width: 70%;
     height: 50%;
     -moz-animation: loading-text-opacity 1s linear 0s infinite normal;
     -o-animation: loading-text-opacity 1s linear 0s infinite normal;
