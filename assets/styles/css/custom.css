@@ -12,9 +12,9 @@ div.hidden {
 }
 
 .floatMove {
-    -webkit-animation: wave 5.77778s 0.3s infinite linear;
-    -moz-animation: wave 5.77778s 0.3s infinite linear;
-    animation: wave 5.77778s 0.3s infinite linear;
+    -webkit-animation: wave 5.77778s 0.1s infinite linear;
+    -moz-animation: wave 5.77778s 0.1s infinite linear;
+    animation: wave 5.77778s 0.1s infinite linear;
 }
 
 .Wheel {
@@ -103,17 +103,17 @@ div.hidden {
     text-align: center;
     width: 100%;
     height: 50%;
-    -moz-animation: loading-text-opacity 3s linear 0s infinite normal;
-    -o-animation: loading-text-opacity 3s linear 0s infinite normal;
-    -webkit-animation: loading-text-opacity 3s linear 0s infinite normal;
-    animation: loading-text-opacity 3s linear 0s infinite normal;
+    -moz-animation: loading-text-opacity 1s linear 0s infinite normal;
+    -o-animation: loading-text-opacity 1s linear 0s infinite normal;
+    -webkit-animation: loading-text-opacity 1s linear 0s infinite normal;
+    animation: loading-text-opacity 1s linear 0s infinite normal;
 }
 
 .blink {
-    -moz-animation: loading-text-opacity 3s linear 0s infinite normal;
-    -o-animation: loading-text-opacity 3s linear 0s infinite normal;
-    -webkit-animation: loading-text-opacity 3s linear 0s infinite normal;
-    animation: loading-text-opacity 3s linear 0s infinite normal;
+    -moz-animation: loading-text-opacity 1s linear 0s infinite normal;
+    -o-animation: loading-text-opacity 1s linear 0s infinite normal;
+    -webkit-animation: loading-text-opacity 1s linear 0s infinite normal;
+    animation: loading-text-opacity 1s linear 0s infinite normal;
     opacity: 0;
 }
 
